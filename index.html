@@ -5,23 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip Image</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6b402e29a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        
-<h1>Image Flip with Text</h1>
-<h3>Hover over the image below:</h3>
+  <div class="container">
 
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="bg.png" alt="Paris" style="width:300px;height:200px">
+    <h1>Flip-flop</h1>
+    <div class="grid-container">
+      <div class="img-1">
+        <div class="flip-box" id="flipbox">
+          <div class="flip-box-inner" id="front">
+            <div class="flip-box-front">
+              <img src="img1.jpg" alt="Paris" style="width:225px;height:150px">
+            </div>
+            <div class="flip-box-back" id="back">
+              <h2>Halong Bay</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-2">
+        <div class="flip-box" id="flipbox">
+          <div class="flip-box-inner" id="front">
+            <div class="flip-box-front">
+              <img src="img2.jpg" alt="Paris" style="width:225px;height:150px">
+            </div>
+            <div class="flip-box-back" id="back">
+              <h2>Germany</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-3">
+        <div class="flip-box" id="flipbox">
+          <div class="flip-box-inner" id="front">
+            <div class="flip-box-front">
+              <img src="img3.jpg" alt="Paris" style="width:225px;height:150px">
+            </div>
+            <div class="flip-box-back" id="back">
+              <h2>Switzerland</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-4">
+        <div class="flip-box" id="flipbox">
+          <div class="flip-box-inner" id="front">
+            <div class="flip-box-front">
+              <img src="img4.jpg" alt="Paris" style="width:225px;height:150px">
+            </div>
+            <div class="flip-box-back" id="back">
+              <h2>Spain</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
+  </div>  
+
+<div class="btn-container">
+  <button onclick="flipLeft()"><i class="fas fa-chevron-left"></i></button>
+  <button onclick="flipRight()"><i class="fas fa-chevron-right"></i></button>
+  <button onclick="flipUp()"><i class="fas fa-chevron-up"></i></button>
+  <button onclick="flipBottom()"><i class="fas fa-chevron-down"></i></button>
 </div>
+
 
 
     <script src="app.js"></script>
